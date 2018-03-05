@@ -1,0 +1,322 @@
+html * {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 16px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/hypnotize.jpg);
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+#header-inner {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: table;
+}
+
+#logo,nav {
+    display: table-cell;
+}
+
+#logo {
+
+}
+
+#logo p {
+    color: #fff;
+    background-color: #4aaaa5;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: table;
+    height: 100%;
+    float: right;
+}
+
+nav li {
+    display: table-cell;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav li:last-child {
+    padding-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: -10px;
+    background: #4aaaa5;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+nav a:hover:before, nav a:focus:before, nav a:active:before {
+    left: 0;
+    right: 0;
+  }
+
+nav a:hover {
+    color: #4aaaa5;
+}
+
+
+
+#main-container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    overflow: hidden;
+}
+
+#main, #sidebar {
+    padding: 25px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#main {
+    width: 650px;
+    float: left;
+}
+
+#main p {
+    padding-bottom: 20px;
+}
+
+/* images set with CSS background image */
+.img {
+    background-size: cover;
+    display: block;
+}
+
+/* Profile picture */
+#profile {
+   background-image: url(../images/profile.jpg);
+   background-position: center right;
+   float: left;
+   margin: 0 25px 25px 0;
+   width: 200px;
+   height: 180px;
+}
+
+/* Portfolio items */
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolio li {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+#portfolio li:nth-child(odd) {
+    padding-right: 20px;
+}
+
+#portfolio li:nth-child(even) {
+    padding-left: 20px;
+}
+
+#portfolio li div {
+    height: 200px;
+    position: relative;
+}
+
+#portfolio li p {
+    color: #fff;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    padding: 12px;
+}
+
+#djhub {
+    background-image: url(../images/djhub.jpg);
+}
+
+#ez-digital {
+    background-image: url(../images/ez-digital.jpg);
+}
+
+#innovations {
+    background-image: url(../images/innovations.jpg);
+}
+
+#memefork {
+    background-image: url(../images/memefork.jpg);
+}
+
+#purpleaf {
+    background-image: url(../images/purpleaf.jpg);
+}
+
+/* End portfolio items */
+
+#sidebar {
+    width: 270px;
+    float: right;
+}
+
+/* social icons with fontawesome */
+#wrap-icon {
+    display: table;
+    width: 100%;
+}
+
+#wrap-icon li {
+    display: table-cell;
+    width:33.33%;
+}
+
+.icon { 
+    font-family: 'Font Awesome\ 5 Free';
+    width: 100%;
+    height: 73px;
+    font-size: 60px;
+
+    position: relative;
+}
+
+.icon:before {
+    position:absolute;
+    transition: .3s;
+}
+
+.icon:hover:before {
+    bottom: 15px;
+}
+
+#github:before {
+    color: #444;
+    background-color: #fff;
+}
+
+#github:hover:before {
+    color: #000;
+}
+
+#linkedin:before {
+    color: #1178b3;
+}
+
+#linkedin:hover:before {
+    color: #023b5c;
+}
+
+#stackoverflow:before {
+    color: #fda429;
+}
+
+#stackoverflow:hover:before {
+    color: #f38e00;
+}
+
+/* End social icons with fontawesome */
+
+h1,h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    line-height: 100%;
+}
+
+h1 {
+    font-size: 25px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+input, textarea {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+textarea {
+    height: 250px;
+    resize: vertical;
+}
+
+button {
+    color: #fff;
+    background-color: #4aaaa5;
+    border: 0;
+    padding: 7px 25px;
+}
+
+footer {
+    background: #666;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#copyright {
+    margin: 0 auto;
+    width: 300px;
+    color: #ccc;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    margin-top: -10px;
+}
+
+/* Make footer sticky */
+#wrap-page {
+    min-height: calc(100vh - 50px);
+}
