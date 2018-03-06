@@ -155,7 +155,7 @@ nav a:hover {
     padding-left: 20px;
 }
 
-#portfolio li div {
+#portfolio .img {
     height: 200px;
     position: relative;
 }
@@ -414,6 +414,35 @@ footer {
 
     #profile {
         width: 100%;
-        height: calc(50vh);
+        height: 0;
+        padding-top: 80%;
+    }
+
+    #profile {
+        float: none;
+        display: block;
+        width: 100%;
+        height: 250px;
+    }
+
+    #portfolio {
+        display: block;
+    }
+
+    #portfolio li {
+        width: 100%;
+    }
+
+    #portfolio li:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    #portfolio li:nth-child(even) {
+        padding-left: 0;
+    }
+
+    #portfolio .img {
+        height: 0;
+        padding-top: 80%;
     }
 }
