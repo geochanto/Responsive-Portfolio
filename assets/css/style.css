@@ -191,6 +191,10 @@ nav a:hover {
     background-image: url(../images/purpleaf.jpg);
 }
 
+#crystal-game {
+    background-image: url(../images/blue.png);
+}
+
 /* End portfolio items */
 
 #sidebar {
