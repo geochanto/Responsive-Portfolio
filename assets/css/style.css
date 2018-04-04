@@ -195,6 +195,10 @@ nav a:hover {
     background-image: url(../images/blue.png);
 }
 
+#giphy {
+    background-image: url(../images/giphy.png);   
+}
+
 /* End portfolio items */
 
 #sidebar {
