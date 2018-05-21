@@ -200,7 +200,7 @@ nav a:hover {
     background-image: url(../images/giphy.png);   
 }
 
-#liri {
+#liri, #bamazon {
     background-image: url(../images/node.jpg);   
     background-size: 85%;
     background-position: top center;
@@ -208,7 +208,6 @@ nav a:hover {
 }
 
 /* End portfolio items */
-
 #sidebar {
     width: 270px;
     float: right;
